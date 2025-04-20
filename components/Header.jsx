@@ -32,7 +32,7 @@ const Header = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        frontend web developer
+        Frontend Web Developer
       </motion.h1>
       <motion.p
         className="max-w-2xl mx-auto font-Ovo "
@@ -40,8 +40,8 @@ const Header = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7 }}
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil ratione
-        distinctio quasi eligendi fuga reiciendis.
+        I’m a frontend developer passionate about building responsive and
+        user-friendly web applications.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4 ">
         <motion.a

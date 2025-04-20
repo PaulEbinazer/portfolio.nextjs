@@ -53,10 +53,11 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-Ovo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa hic,
-            ad fugiat commodi iste earum impedit debitis corporis cum. Dolore
-            mollitia aliquid molestiae maiores. Saepe ipsam ratione repellendus
-            maiores eius?
+            I'm a frontend developer with a passion for crafting clean,
+            responsive, and interactive user interfaces. I enjoy turning ideas
+            into real-world applications using React, JavaScript, and modern web
+            tools. I'm always exploring new technologies and improving my skills
+            to build better digital experiences.
           </p>
           <motion.ul
             initial={{ opacity: 0 }}
@@ -100,7 +101,7 @@ const About = ({ isDarkMode }) => {
           >
             {toolsData.map((tool, index) => (
               <motion.li
-                whileHover={{scale:1.1}}
+                whileHover={{ scale: 1.1 }}
                 className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-2 duration-500"
                 key={index}
               >

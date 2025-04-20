@@ -36,9 +36,10 @@ const Work = ({ isDarkMode }) => {
         transition={{ delay: 0.7, duration: 1 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veniam
-        accusantium maiores facilis dolor animi velit veritatis obcaecati ab,
-        minima quasi eveniet amet! Ratione, placeat?
+        This projects showcases my ability to build dynamic and responsive web
+        applications. It highlights my skills in React, API integration, and
+        modern UI design. I focused on performance, clean code, and creating a
+        smooth user experience across devices.
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}
@@ -46,10 +47,8 @@ const Work = ({ isDarkMode }) => {
         transition={{ delay: 0.9, duration: 0.6 }}
         className="grid sm:grid-cols-2 lg:grid-cols-4  my-10 gap-5 overflow-x-visible  "
       >
-        {workData.map((project, index) => (
+        {workData.map((project, index, link) => (
           <div
-          
-            
             key={index}
             className="aspect-square bg-no-repeat bg-cover  rounded-lg relative cursor-pointer group origin-center z-10 gap-x-10 "
             style={{ backgroundImage: `url(${project.bgImage})` }}
@@ -63,16 +62,26 @@ const Work = ({ isDarkMode }) => {
                 <p className="text-sm text-gray-700">{project.description}</p>
               </div>
               <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-black group-hover:bg-lime-300 transition">
-                <Image src={assets.send_icon} alt="" className="w-5" />
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={assets.send_icon}
+                    alt="Go to project"
+                    className="w-5"
+                  />
+                </a>
               </div>
             </div>
           </div>
         ))}
       </motion.div>
-      <motion.a 
-      initial={{opacity:0}}
-      whileInView={{opacity:1}}
-      transition={{delay:1.1,duration:1}} 
+      <motion.a
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 1.1, duration: 1 }}
         href=""
         className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20  hover:bg-lightHover duration-500 dark:text-white dark:border-white  dark:hover:bg-darkHover "
       >
